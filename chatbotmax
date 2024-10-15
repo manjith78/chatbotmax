@@ -51,6 +51,13 @@ def respond_to_user(input_message):
             "Hymn for the Weekend Song by Coldplay"
           ]
     l17= ["xo","ox","game","bored","tictactoe"]
+    l20=[
+            "treat you better",
+            "monster",
+            "nights",
+            "sugarcrush",
+            "perfect","senjittalae","wasted","kavaalaa","lolitaa","mundhinam","azhagae","kadhaipoma","2002","blindinglights"]
+        
     def start_tic_tac_toe():
       from tkinter import messagebox
 
@@ -146,6 +153,8 @@ def respond_to_user(input_message):
            return random.choice(l16)
       elif element in l17:
          start_tic_tac_toe()
+      elif element=="randomsong":
+          return random.choice(l20)
       else:
         continue
 
@@ -195,3 +204,4 @@ chat_log.insert(tk.END, "Chatbot: " + get_greeting() + "\n")
 chat_log.config(state=tk.DISABLED)
 
 window.mainloop()
+
